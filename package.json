@@ -9,16 +9,19 @@
     "aws-amplify": "^3.0.5",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
+    "react-bootstrap-icons": "^1.0.1-alpha3",
     "react-dom": "^16.13.1",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-stripe-elements": "^6.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && npm run prettier-watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}"
   },
   "eslintConfig": {
     "extends": "react-app"
